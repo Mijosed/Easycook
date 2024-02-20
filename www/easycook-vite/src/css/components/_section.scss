@@ -1,0 +1,14 @@
+.section{
+    padding: rem(16) rem(30);
+    &-presentation{
+        text-align: center;
+        background-color: var(--brown);
+    }
+    &-menu{
+        background-color: var(--grey);
+        text-align: center;
+    }
+    @media screen and (min-width: $md-size) {
+        padding: rem(30) rem(120);
+    }
+}

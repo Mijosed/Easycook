@@ -1,0 +1,53 @@
+form {
+
+  .container {
+    @include flexbox(column, wrap, space-between, stretch,rem(16));
+
+    .form-group{
+      input{
+        border-radius: var(--main-radius);
+        border: none;
+        padding: rem(10) rem(18);
+        font-size: inherit;
+        width: 100%;
+        background-color: var(--grey-darker);
+        color: var(--red-darker);
+      
+      }
+      input::placeholder{
+        color: var(--text-color);
+      
+      }
+      select{
+        border-radius: var(--main-radius);
+        border: none;
+        padding: rem(10) rem(18);
+        font-size: inherit;
+        width: 100%;
+        background-color: var(--grey-darker);
+        color: var(--text-color);
+
+        option{
+          color: var(--text-color);
+          
+          width: 120px !important;
+        }
+      }
+      textarea{
+        border-radius: var(--main-radius);
+        border: none;
+        padding: rem(10) rem(18);
+        font-size: rem(16);
+        width: 100%;
+        background-color: var(--grey-darker);
+        color: var(--text-color);
+      }
+      textarea::placeholder{
+        color: var(--text-color);
+      }
+
+      
+    }
+  }
+    
+}

@@ -1,0 +1,166 @@
+## Design-guide
+
+/design-guide:
+  controller: Main
+  action: designGuide
+  roles: []
+
+## Main
+
+/:
+  controller: Main
+  action: home
+  roles: []
+
+/contact:
+  controller: Main
+  action: contact
+  roles: []
+
+/login:
+  controller: Security
+  action: login
+  roles: []
+
+/logout:
+  controller: Security
+  action: logout
+  roles: [admin,viewer,chef]
+
+/register:
+  controller: Security
+  action: register
+  roles: []
+
+/password-forgot:
+  controller: Security
+  action: passwordForgot
+  roles: []
+
+/enable-account:
+  controller: Security
+  action: enableAccount
+  roles: []
+
+/change-password:
+  controller: Security
+  action: changePassword
+  roles: []
+
+## Admin
+/admin:
+  controller: Dashboard
+  action: dashboard
+  roles: [admin]
+
+/admin/dashboard:
+  controller: Dashboard
+  action: dashboard
+  roles: [admin]
+
+/admin/settings:
+  controller: Setting
+  action: setting
+  roles: [admin]
+
+/admin/menus:
+  controller: Menu
+  action: showMenus
+  roles: [admin]
+
+/admin/menus/add:
+  controller: Menu
+  action: addMenu
+  roles: [admin]
+
+/admin/recipes:
+  controller: Recipe
+  action: showRecipes
+  roles: [admin]
+
+/admin/recipes/add:
+  controller: Recipe
+  action: addRecipe
+  roles: [admin]
+  
+/admin/recipes/delete:
+  controller: Recipe
+  action: deleteRecipe
+  roles: [admin]
+  
+/admin/recipes/edit:
+  controller: Recipe
+  action: editRecipe
+  roles: [admin]
+
+/admin/users:
+  controller: User
+  action: showUsers
+  roles: [admin]
+
+/admin/reviews:
+  controller: Review
+  action: showReviews
+  roles: [admin]
+
+/admin/pages:
+  controller: PageController
+  action: showPages
+  roles: [admin]
+
+/admin/pages/add-page:
+  controller: PageController
+  action: addPage
+  roles: [admin]
+
+/admin/pages/edit-page:
+  controller: PageController
+  action: editPage
+  roles: [admin]
+
+/admin/pages/delete-page:
+  controller: PageController
+  action: deletePage
+  roles: [admin]
+
+/admin/category/add:
+  controller: Category
+  action: addCategorie
+  roles: [admin]
+
+/admin/category:
+  controller: Category
+  action: showCategories
+  roles: [admin]
+
+/admin/category/delete:
+  controller: Category
+  action: deleteCategory
+  roles: [admin]
+
+/admin/category/edit:
+  controller: Category
+  action: editCategory
+  roles: [admin]
+
+
+
+/admin/navigation:
+  controller: Navigation
+  action: showNavigation
+  roles: [admin]
+
+/admin/navigation/add:
+  controller: Navigation
+  action: addNavigation
+  roles: [admin]
+
+/admin/navigation/delete:
+  controller: Navigation
+  action: deleteNavigation
+  roles: [admin]
+
+/admin/navigation/edit:
+  controller: Navigation
+  action: editNavigation
+  roles: [admin]
